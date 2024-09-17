@@ -11,13 +11,24 @@
 <body>
 
   <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#"></a>
     <ul class="nav nav-pills">
-      <li class="nav-item">
-        <a class="nav-link" href="#scrollspyHeading1">Teaching Experience</a>
+      <li class="nav-item"></li>
+      <a class="nav-link" href="#scrollspyHeading1">Work Experience</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Teaching Experience
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">ENES100</a>
+          <a class="dropdown-item" href="#">ENES197</a>
+          <a class="dropdown-item" href="#">ENEE200</a>
+        </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#scrollspyHeading2">Publications</a>
+        <a class="nav-link" href="#scrollspyHeading3">Publications</a>
       </li>
     </ul>
   </nav>
@@ -26,10 +37,58 @@
 
   <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
     data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-    <h4 id="scrollspyHeading1">Teaching Experience</h4>
+    <h3 id="scrollspyHeading1">Work Experience</h3>
     <br>
 
-    <h4 id="scrollspyHeading2">Publications</h4>
+    <h3 id="scrollspyHeading2">Teaching Assistant Experience</h3>
+
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="..." class="card-img" alt="">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title"> ENES100 - Intro. to Engineering Design</h5>
+            <p class="card-text"> Awarded: James W. Dally Prize for Outstanding Instructional Support</p>
+            <p class="card-text"><small class="text-muted">Fall 2022-Present (5 Semesters)</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="..." class="card-img" alt="">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title"> ENES197 - The Fault in Our Data (Introductory Data Science)</h5>
+            <p class="card-text"> </p>
+            <p class="card-text"><small class="text-muted">2024 Winter Term (3-weeks)</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="..." class="card-img" alt="">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title"> ENEE200 - Engineering Ethics</h5>
+            <p class="card-text"> </p>
+            <p class="card-text"><small class="text-muted">Spring 2024-Present (2 Semesters)</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <h3 id="scrollspyHeading3">Publications</h3>
     <br>
 
     <div class="container-fluid">
@@ -47,6 +106,8 @@
 
           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
             <div class="card-body">
+              <p>Paper on efficacy and student response to novel machine learning curriculum using Google Colab and live
+                image classification ML models with webcams. Paper was presented at ASEE FYEE 2024 in Boston, MA. </p>
               <div class="text-center">
                 <a class="btn btn-primary" href="https://peer.asee.org/48595" role="button">View Publication</a>
               </div>
@@ -65,7 +126,11 @@
           </div>
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
             <div class="card-body">
-
+              <p>
+                Paper on using multiplex networks of temporal visibility graphs of EEG signal data to train a mental
+                workload classification machine learning model. Results showed accurate model. Paper presented at BI
+                2023 in Hoboken, NJ.
+              </p>
               <div class="text-center">
                 <a class="btn btn-primary" href="https://doi.org/10.1007/978-3-031-43075-6_18" role="button">View
                   Publication</a>
@@ -85,7 +150,9 @@
           </div>
           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div class="card-body">
-
+              <p>
+                Paper on methods of introducing machine learning to first year engineering students, including technical specification and immediate results of ENES100's implementation of ML curriculum using NVIDIA Jetson Nanos.
+              </p>
               <div class="text-center">
                 <a class="btn btn-primary" href="https://peer.asee.org/44829" role="button">View Publication</a>
               </div>
